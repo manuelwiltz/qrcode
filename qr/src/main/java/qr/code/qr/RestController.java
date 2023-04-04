@@ -9,6 +9,7 @@ import java.awt.image.BufferedImage;
 
 @Controller
 @RequestMapping("/qrcode")
+@CrossOrigin(origins = "*")
 public class RestController {
 
     @PostMapping(value = "/generate", produces = MediaType.IMAGE_PNG_VALUE)
